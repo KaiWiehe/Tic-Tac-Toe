@@ -13,6 +13,8 @@
 </head>
 
 <body>
+    <img class="game-over hide" id="game-over" src="img/game-over.png">
+    <button class="restart hide" id="restart" onclick="restart()">Neues Spiel?</button>
     <div class="player-label">
         <div id="player-1"><img src="img/o.svg"> <span>Player 1</span></div>
         <div id="player-2" class="player-inactive"><img src="img/x.svg"> <span>Player 2</span></div>
@@ -27,8 +29,8 @@
             <div id="5" class="hide horizontal-line vertical" style="top: 204px;"></div>
             <div id="6" class="hide horizontal-line vertical" style="top: 204px;left: 140px;"></div>
 
-            <div id="7" class="hide horizontal-line" style="top: 204px;left: -92px;transform: rotate(45deg); width: 600px"></div>
-            <div id="8" class="hide horizontal-line" style="top: 204px;left: -92px;transform: rotate(-45deg); width: 600px"></div>
+            <div id="7" class="hide horizontal-line" style="top: 204px;left: -92px;transform: rotate(45deg) scale(0); width: 600px"></div>
+            <div id="8" class="hide horizontal-line" style="top: 204px;left: -92px;transform: rotate(-45deg) scale(0); width: 600px"></div>
             <tr>
                 <td onclick="fillShape(0)">
                     <img id="o-0" class="shape hide" src="img/o.svg">
